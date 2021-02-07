@@ -48,9 +48,13 @@ one_year_data = '2016-08-23'
 def home():
     return (
     f"Welcome to the Hawaii Weather API!<br/>"
+    f"<br>"
     f"The following Routes are available: <br>"
-    f"/api/v1.0/precipitation - returns percipitation data for the dates between 8/23/2016 and 8/23/2017 <br>"
-    f"/api/v1.0/stations - returns a list of weather stations <br>"
+    f"/api/v1.0/precipitation - Returns percipitation data for the dates between 8/23/2016 and 8/23/2017. <br>"
+    f"/api/v1.0/stations - Returns a list of weather stations. <br>"
+    f"/api/v1.0/tobs - Returns a list of the Temperature Observations (tobs) for each station for the dates between 8/23/2016 and 8/23/2017. <br>"
+    f"/api/v1.0/<date> - Returns the minimum, average and max temperatures for a given day. <br>"
+    f"/api/v1.0/<start>/<end> - Returns the minimum, average and max temperatures between a given start and end date. "
     )
 
 
